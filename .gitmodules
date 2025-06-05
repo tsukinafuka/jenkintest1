@@ -1,6 +1,0 @@
-[submodule "GastronoMealGroup"]
-	path = GastronoMealGroup
-	url = https://github.com/tsukinafuka/jenkinstest
-[submodule "front/GmealGroupeBack"]
-	path = front/GmealGroupeBack
-	url = https://github.com/tsukinafuka/jenkinstest
