@@ -1,0 +1,142 @@
+/* LE HEADER2 POUR L'USER CONNECTE */
+nav{
+    background-color: white;
+    display: flex;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0.5px;
+    border-style: inset;
+    border-color: grey;
+}
+
+.tp2{
+    justify-content: space-between;
+    display: flex;
+}
+
+.buttonNavig2{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btnBlack2{
+    background-color: #FF7828;
+    color: white;
+    width: 90px !important;
+    height: 30px;
+}
+
+.imgLogoNav2 {
+    width: 300px;
+    height: auto;
+}
+
+.imgLogoNav2 img {
+    padding: 10px;
+    width: 100%; 
+    height: auto;
+}
+
+.userAvatar2 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.lien2{
+    justify-content: space-between;
+}
+
+.lienNav2{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+.lien2 a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Nav Mobile */
+
+.iconeMenuMobile {
+    display: none;
+    cursor: pointer;
+}
+
+.imgIconeMenuMobile {
+    width: 40px;
+    height: auto;
+}
+
+.contentMenuMobile {
+    display: none;
+    flex-direction: column;
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 9.6%;
+    background-color: #FFFFFF;
+    z-index: 1;
+    border: none;
+    
+}
+.contentMenuMobile.active {
+    display: flex !important;
+}
+
+.Menu2Mobile, .Menu3Mobile, .Menu4Mobile {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 0.5px solid grey;
+    border-left: 0.5px solid grey;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Menu1Mobile {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-bottom: 0.5px solid grey;
+    border-left: 0.5px solid grey;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.Menu2Mobile:hover, .Menu3Mobile:hover, .Menu3Mobile a:hover, .Menu2Mobile a:hover, .Menu4Mobile:hover, .Menu4Mobile a:hover {
+    background-color: #FF7828;
+    color: #FFFFFF;
+}
+
+@media(max-width: 750px) {
+    .lien2,.buttonNav2 {
+        display: none;
+    }
+    .iconeMenuMobile {
+        display: flex;
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+    }
+    .lienNav2 {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

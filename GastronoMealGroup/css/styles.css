@@ -1,0 +1,1949 @@
+* {
+    margin: 0; /* Réinitialise toutes les marges */
+    padding: 0; /* Réinitialise tous les paddings */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.close_btn {
+    border-radius: 30%;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close_btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* LE FOOTER */
+footer {
+    display: flex;
+    padding: 20px;
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: relative;
+    border-left: 0;
+    border-top: 0.5px outset grey;
+    border-right: 0;
+    border-bottom: 0;
+    flex-direction: row !important; 
+    align-items: center;
+    justify-content: center;
+}
+
+.leFooter {
+    display: flex;
+    gap: 50px;
+    width: 90%;
+    height: auto;
+}
+/* police du footer */
+footer p {
+    padding: 5px;
+    text-align: left;
+   /* text-align: center; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.infosLegales {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.infosUtiles {
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.logoReseaux {
+   
+    
+}
+
+.imgFooter {
+    width: 30px;
+    height: auto;
+}
+/* //////////////////////  PAGE PRINCIPAL  ///////////////////////// */
+#map { height: 100vh; } /* La carte prend toute la hauteur de l'écran */
+/* Container principal de la page web */
+.containerPrincipal {
+    width: 100%;
+    /* background-color: darkgrey; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerSecondaire {
+    width: 100%;
+    /* background-color: darkgrey; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container_1 {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.container_1 h3 {
+    text-align: left !important; 
+}
+
+.container_1 a {
+    text-decoration: underline;
+}
+
+.LivFoodPro {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    flex: 0;
+    gap: 50px;
+    text-align: left;
+}
+
+@media(max-width:750px) {
+    .LivFoodPro {
+        flex-direction: column;  
+        width: 80%;
+    }
+    .container_1 {
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+.foodpro {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.platliv {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.livreur {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.container_1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.container_2 {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    background-image: url(../images/foodAlex.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.superpoImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-left: 40px;
+    gap: 10px;
+}
+
+@media(max-width: 750px) {
+
+    .whenLivraison {
+        width: 300px !important;
+    }
+    .foundRetaurantBtn {
+        width: 300px !important;
+    }
+    .superpoImage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0;
+    }
+    .container_2 {
+        justify-content: center;
+    }
+    .foundAdress {
+        align-items: center;
+        justify-content: flex-start !important;
+        border-left: 1px solid #FF7828;
+    }
+    .foundAdress input {
+        width: 100% !important;
+    }
+
+    .foundAdress input[type="text"] {
+        border:none;
+    }
+    
+}
+
+.foundAdress {
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.foundAdress input {
+    margin-top: 15px;
+    height: 100%;
+}
+
+.iconeLocal {
+    display: flex;
+}
+
+
+
+.foundAdress input:focus {
+    outline: none;
+    border-color: #FF7828;
+}
+
+.whenLivraison {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+}
+
+.btn-group {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column;
+}
+
+.btn-dropdown {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-dropdown.close{
+    display: none;
+}
+
+.btn-dropdown:hover {
+    background-color: #FF7828;
+    color: #FFFFFF;
+}
+
+
+.dropdown-menu {
+    display: none;
+}
+
+
+.dropdown-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.dropdown-item:hover {
+    background-color: #FF7828;
+    color: #FFFFFF;
+}
+
+.dropdown-item {
+    display: flex;
+    padding: 10px;
+    background-color: #FFFFFF; 
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+.foundRetaurantBtn {
+    font-size: 18px;
+    width: 200px;
+    max-width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.foundRetaurantBtn:hover {
+    background-color: rgb(49, 46, 46);
+}
+
+#map {
+    height: 400px;
+}
+
+.foundCity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    font-size: 18px;
+}
+
+@media(max-width: 750px) {
+    .foundCity {
+        width: 60%;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column;
+        font-size: 16px;
+    }
+}
+
+.foundCity table tbody {
+    display: flex;
+    flex-direction: row;
+    gap:0;
+}
+
+.foundCity tr {
+    display: flex;
+    flex-direction: column;
+}
+
+/* /////////// isLogin ///////////// */
+
+#my-popover{
+     display: none;
+     width: 100%;
+     height: 100%;
+     position: fixed;
+}
+
+#my-popover:popover-open {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.popoverAdresse {
+    background-color: #FFFFFF;
+    width: 500px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+}
+
+.optiPopover {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 40px;
+    gap: 10px;
+}
+.optiPopover2 {
+    justify-content: center;
+    align-items: center;
+    display: none;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 40px;
+    gap: 10px;
+}
+/* Empêche le scroll de la page */
+html:has(#my-popover:popover-open) {
+    overflow: hidden;
+}
+
+.container_1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container_1 h1{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container_1 h3{
+    color: gray;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* MODBILE isLogin.pjp */
+@media(max-width:750px) {
+    .popoverAdresse {
+        width: 400px;
+    }
+}
+
+/* /////////// LOGIN ///////////// */
+
+.content_full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fond sombre derrière le popup */
+    display:flex; /* Caché par défaut */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.content_full.active {
+    display: flex;
+}
+
+.content_login.close {
+    display: none;
+}
+
+.content_login {
+    width: 400px;
+    padding: 30px;
+   /* flex: 1; /* Caché par défaut */
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+@media(max-width:750px) {
+    .content_login {
+        width: 300px;
+    }
+}
+
+.eye-open {
+    display: flex;
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.passwordAndEye {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    gap: 5px;
+}
+
+.content_login button {
+    display: block;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF7828;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* REVOIR SI DECORATION A REMETTRE A CERTAINS ENDROITS */
+a {
+    text-decoration: none;
+}
+
+.content_login h2, p {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content_login a {
+    color:darkmagenta;
+    padding: 5px 5px;
+}
+
+form{
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    
+}
+
+form p { 
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="password"],input[type="tel"] {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    
+}
+
+.modal {
+    display: none; /* Cachée par défaut */
+    position: fixed; /* Positionnement fixe */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex; /* Afficher en flex lorsque la classe 'show' est ajoutée */
+}
+
+.modal_content {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media(max-width:750px) {
+    .modal_content {
+        padding: 10px;
+        width: 80%;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.inputEmailAjust {
+    display: flex;
+    margin-top: 15px;
+}
+
+.modal_content button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* /////////// REGISTER ///////////// */
+.content_full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fond sombre derrière le popup */
+    display:flex; /* Caché par défaut */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.content_full.active {
+    display: flex;
+}
+
+.content_register {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 30px;
+   /* flex: 1; /* Caché par défaut */
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+@media(max-width:750px) {
+    .content_register {
+        width: 300px;
+    }
+    .contentVerifCodeRecu.active, .content_register_after_check.active, .confirmByTelMail  {
+        flex-direction: column !important;
+    }
+    .confirmByTelMail {
+        width: 50% !important;
+        flex-direction: column !important;
+    }
+    .confirmByMail.active, .confirmByTel.active {
+        flex-direction: column !important;
+    }
+}
+
+.content_register.close {
+    display: none;
+}
+
+.content_register_after_check {
+    display: none;
+}
+
+.content_register_after_check.active, .contentVerifCodeRecu.active {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    flex-direction: column;
+    width: 600px;
+    height: auto;
+    padding: 30px;
+    z-index: 1000;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.content_register_after_check.active a, .contentVerifCodeRecu a  {
+    color: #FFFFFF;
+}
+
+.confirmByTelMail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+.hideConfirmMailAndTel {
+    display: flex;
+    gap: 10px;
+}
+
+.confirmByTel, .confirmByMail, .hideConfirmMailAndTel.close {
+    display: none;
+}
+
+.confirmByTel.active, .confirmByTelMail.active, .confirmByMail.active {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap:10px;
+}
+
+input[type="text"], input[type="mail"], input[type="int"] {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Check code recu mail / sms */
+
+.contentVerifCodeRecuTel, .contentVerifCodeRecuMail, .contentVerifCodeRecu {
+    display: none;
+}
+
+.contentVerifCodeRecuTel.active, .contentVerifCodeRecuMail.active {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contentVerifCodeRecu p {
+    color: #828282;
+    font-size: 14px;
+}
+
+/* boutton s'inscrire *******************/ 
+.hideInscriptionbutton {
+    display: none; /* effet déjà persistant sur .content_register button */
+}
+
+/*.content_register button.active {
+    display: block;
+    background-color: #FF7828;
+    pointer-events: all;
+}*/
+
+/* boutton s'inscrire *******************/
+/*
+.content_register button {
+    display: block;
+    pointer-events: none;
+    border-radius: 10px;
+    border: none;
+    background-color: #828282;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}*/
+
+.content_register h2 {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content_register p {
+    text-align: center;
+   
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content_register a {
+    color:darkmagenta;
+}
+
+form{
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+form p { 
+    text-align: center;
+}
+
+.registerCGU {
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+/* /////////// profilClient ///////////// */
+
+.container_1_profilClient {
+    width: 100%;
+    height:auto;
+    display:flex;
+    top: 0;
+    left: 0;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    gap: 20px;
+}
+
+.container_1_profilClient h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.containerProfil {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: auto;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media(max-width: 750px) {
+    .containerProfil {
+        flex-direction: column;
+        height: auto; 
+        gap: 20px;  
+        
+    }
+    .container_1_profilClient {
+        gap: 20px;
+    }
+    .numberPhonePF, .streetPF {
+        flex-direction: column !important;
+        height: 300px !important;
+    }
+    .showModificationsProfil {
+        height: auto;
+    }
+}
+
+.containerProfil p {
+    color: grey;
+    text-align: left;
+}
+
+.showModificationsProfil {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fond sombre derrière le popup */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.showModificationsProfil.active{
+    display:flex; /* Caché par défaut */
+}
+
+.numberPhonePF, .streetPF {
+    display: none;
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px black;
+    position: relative;
+    top:0;
+    left: 0;
+    border: none;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.numberPhonePF.active, .streetPF.active {
+    display: flex;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+
+.containerAdresse p, .containerTel p  {
+    color: grey;
+}
+/* ///////////////////////////////////////////////////////////////// */
+.containerTel, .containerAdresse, .containerAdresseTravail, .containerAdresseDomicile{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    height: auto;
+    background-color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.containerTel img, .containerAdresse img, .containerAdresseTravail img, .containerAdresseDomicile img{
+    width: 20px;
+    height: auto;
+}
+
+.btnAdresse {
+    width: 50%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notifProfilClientButton {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+.notifProfilClient {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonNotifProfilClien {
+    display: flex;
+    width: 100% !important;
+    height: auto;
+    margin-right: 20px;
+}
+
+input[type="checkbox"]{
+    display: flex;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 25px;
+    background-color: #FFFFFF;
+    transition: background-color .2s;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #828282;
+    position: relative;
+}
+
+input[type="checkbox"]::after {
+    background-color: black;
+    content: '';
+    transition: left .2s;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%)
+}
+
+input[type="checkbox"]:checked {
+    background-color: #FF7828;
+    
+}
+
+input[type="checkbox"]:checked::after {
+    left: 70%;
+    background-color: #FFFFFF;
+}
+/* ///////////////////////////////////////////////////////////////// */
+
+.HabitudeClient {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+    gap: 20px;
+    border-top: 0.5px solid grey;
+    border-bottom: 0.5px solid grey;
+}
+
+.deroulerAchatPrefs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deroulerMesPref {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mesAchats, .mesPref{
+    height: 25px;
+}
+.mesAchatsDiv {
+    display: none;
+    background-color: #FF7828;
+    
+}
+
+.mesAchats1, .mesAchats2, .mesAchats3 {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #FFFFFF;
+    border: 0.5px solid rgb(194, 186, 186);
+    border-radius: 5px;
+    gap: 10px;
+    align-items: center;
+}
+
+.imgMesAchats, .imgMesPref {
+    margin-left: 15px;
+}
+
+.buttonMesachats {
+    background-color: #ccc;
+    color: black;
+    width: 50px !important;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.textMesAchats {
+    display: flex;
+    flex-direction: column;
+}
+
+.mesAchatsDiv.active, .mesPrefDiv.active {
+    display: flex !important;
+    flex-direction: column;
+    background-color: #FFFFFF; /* Mettre color si besoin de visu en dev */
+    width: 90%;
+    height: auto; /* mettre auto pour import BDD */
+    justify-content:  center !important;
+    gap: 30px;
+}
+
+.mesPrefDiv.active {
+    flex-direction: row !important;
+    height: 300px !important;
+    align-items: center;
+}
+
+@media(max-width: 750px) {
+    .mesPrefDiv.active{
+        flex-direction: column !important;
+        width: 60%;
+        height: auto;
+        gap: 5px;
+    }
+    .deroulerMesPref {
+        gap: 50px;
+        margin-top: 50px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgMesPref {
+        margin-left: 0;
+        border: none;
+        border-radius: 5px;
+    }
+    .containerAdresse, .containerTel,.containerAdresseTravail, .containerAdresseDomicile {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        align-items: center;
+    }
+    .notifProfilClientButton {
+        flex-direction: column;
+    }
+    
+}
+
+.mesAchats.active, .mesPref.active {
+    text-decoration: underline;
+}
+
+.mesPrefDiv {
+    display: none;
+}
+
+.mesPref1, .mesPref2, .mesPref3 {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #FFFFFF;
+    border: 0.5px solid rgb(194, 186, 186);
+    border-radius: 5px;
+    gap: 10px;
+    align-items: center;
+}
+
+.mesPref:hover, .mesAchats:hover{
+    box-shadow: 0 0 15px rgba(131, 63, 3, 0.3);
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* /////////// INDEX ///////////// */
+
+.container_1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_1 h1{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container_1 h3{
+    color: gray;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container_1 button{
+    
+    text-align: center;
+    margin: 5px; 
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.container_1 .button_connexion {
+    background-color: #FF7828;
+    color: white;
+}
+
+.container_1 .button_inscription {
+    background-color: black;
+    color: white;
+}
+
+/* /////////// FORMULAIRE ///////////// */
+
+/* Encadré de connexion/inscription ( popup ) */
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fond sombre derrière le popup */
+    display:flex; /* Caché par défaut */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popup-hidden {
+    display: none;
+}
+
+
+
+.popup-content a {
+    text-decoration: none;
+}
+
+/* /////////// CREATION COMMANDE ///////////// */
+
+.registrePlat{
+    background-color: white;
+
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.imgCreat{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.typePlat{
+    display: flex;
+}
+
+.txtcreation{
+    margin-left: 10px;
+}
+
+.nbPlat{
+    color: #828282;
+}
+
+.nbPlat{
+    margin-top:10px;
+}
+
+.poids{
+    background-color: white;
+    margin-bottom: 1px;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.nbpoids{
+    padding-top:25px;
+    color: #828282;
+}
+
+.Destination{
+    background-color: white;
+    margin-bottom: 1px;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.changerAdresse{
+    display: flex;
+}
+
+.lvAd{
+    margin-left: 10px;
+}
+
+.btnAd{
+    margin-left: 10px;
+    background-color: black;
+    color:white;
+
+    width: 150px;
+    border-radius: 5px;
+}
+
+.txtAdd{
+    display: flex;
+}
+
+.txtAdd{
+    padding-top: 35px;
+}
+
+.txtAdd a{
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.btnAutrPg{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.btnPgWhite{
+    width: 50%;
+    height: 45px;
+    background-color: white;
+    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.btnPgBlack{
+    width: 50%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+/* /////////// NAV - HEADER ///////////// */
+
+nav{
+    background-color: white;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0.5px;
+    border-style: inset;
+    border-color: grey;
+}
+
+.tp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lien{
+    justify-content: space-between;
+}
+
+.lien a:hover {
+    text-shadow: 0 0 15px rgba(81, 51, 2, 0.7);
+}
+
+.lienNav{
+    display: flex;
+    align-items: center;
+}
+
+.lien a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.lien{  
+    align-items: center;
+}
+
+.buttonNav button {
+    margin-left: 10px;
+}
+
+.buttonNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.btnBlack{
+    background-color: black;
+    color:white;
+    width: 80px !important;
+    height: auto;
+}
+
+.btnBlack:hover, .btnBlack a:hover {
+    background-color: rgb(46, 44, 44);
+}
+
+.btnWhite{
+    background-color: #FF7828;
+    color: white;
+    width: 80px !important;
+    height: auto;
+}
+
+.btnWhite:hover, .btnWhite a:hover {
+    background-color: #f7c6aa;
+    color: black;
+}
+
+.buttonNavig{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.imgLogoNav {
+    width: 300px;
+    height: auto;
+}
+
+.imgLogoNav img {
+    padding: 10px;
+    width: 100%; 
+    height: auto;
+}
+/* Nav Mobile */
+
+.iconeMenuMobile {
+    display: none;
+    cursor: pointer;
+}
+
+.imgIconeMenuMobile {
+    width: 40px;
+    height: auto;
+}
+
+.contentMenuMobile {
+    display: none;
+    flex-direction: column;
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 9.6%;
+    background-color: #FFFFFF;
+    z-index: 1;
+    border: none;
+    
+}
+.contentMenuMobile.active {
+    display: flex !important;
+}
+
+.Menu2Mobile, .Menu3Mobile {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 0.5px solid grey;
+    border-left: 0.5px solid grey;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Menu1Mobile {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-bottom: 0.5px solid grey;
+    border-left: 0.5px solid grey;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.Menu2Mobile:hover, .Menu3Mobile:hover, .Menu3Mobile a:hover, .Menu2Mobile a:hover {
+    background-color: #FF7828;
+    color: #FFFFFF;
+}
+
+@media(max-width: 750px) {
+    .lien,.buttonNav {
+        display: none;
+    }
+    .iconeMenuMobile {
+        display: flex;
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+    }
+    .lienNav {
+        flex-direction: column !important;
+        justify-content: center;
+    }
+}
+
+/* ///////////    ///////////// */
+
+/* Conteneur du formulaire */
+.container_mail {
+    max-width: 600px; 
+    margin: 50px auto; /* Centrer le formulaire verticalement et horizontalement */
+    padding: 20px;
+    background: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.container_mail h1 {
+    text-align: center; 
+    color: #FF7828;
+    margin-bottom: 30px; 
+}
+
+.form-label {
+    font-weight: bold; 
+    margin-bottom: 8px;
+    display: block; 
+}
+
+.form-control {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ced4da; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: border-color 0.3s; 
+}
+
+.form-control:focus {
+    border-color: #FF7828;
+    outline: none; 
+}
+
+textarea.form-control {
+    min-height: 100px; 
+    resize: vertical; /* Permettre le redimensionnement vertical */
+}
+
+.btn {
+    background-color: #FF7828; 
+    color: white; 
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.btn:hover {
+    background-color: #94461a; 
+    transform: translateY(-2px); /* Léger effet de déplacement */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container_mail {
+        padding: 15px; /* Réduire l'espacement interne sur les petits écrans */
+    }
+}
+/* ########################*/
+
+.containerAdressTravailDomicile {
+    display: none;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    flex-direction: column;
+   
+}
+
+.containerAdressTravailDomicile.active {
+    display: flex;
+}
+
+.contentAdDomTaf {
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+    cursor: pointer;
+    color: white;
+}
+
+.firstContentDefaut  {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    color: white;
+}
+
+.firstContentDefaut button a {
+    color: white;
+}
+
+.firstContentDefaut.close {
+    display: none;
+}
+
+.contentAdresseDefaut {
+    display: none;
+
+}
+
+.contentAdresseDefaut.active {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contentDefautDomicile {
+    display: none;
+}
+
+.contentDefautDomicile.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contentDefautTravail {
+ display: none;
+}
+
+.contentDefautTravail.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* ############### ADRESSE  ################# */
+.list-city {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 300px !important;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+.list-city2 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100px !important;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    z-index: 1000;
+    position: absolute;
+    left: 45%;
+    top: 75%;
+}
+.list-city2:hover {
+    background-color: white;
+}
+.list-city ul, .list-city ul li, .list-city2 ul, .list-city2 ul li  {
+    list-style: none;
+    cursor: pointer;
+}
+.list-city ul li:hover, .list-city2 ul li:hover  {
+    background-color: rgb(227, 206, 206);
+    border-radius: 5px;
+}
+
+.optiPopover.close {
+    display: none;
+}
+
+.optiPopover2.active {
+    display: flex;
+}
+
+
+.content-1-off {
+    display: none;
+}
+
+.search-bar-adresse {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    top: 71.9%;
+    left: 45%;
+    width: 200px;
+    height: 25px;
+    z-index: 1000;
+    
+}
+
+.search-bar-adresse input {
+    border: 2px solid black;
+}
+
+/* RESTAURANT */
+
+.headerRestaurant {
+    
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+#iconCarouselContainer-abx {
+    width: 100%;
+    overflow: hidden;
+    background: none;
+    padding: 10px 0;
+    display: flex;
+  }
+  
+  #iconCarouselTrack-abx {
+    display: flex;
+    gap: 20px;
+    animation: scrollIcons-abx 30s linear infinite;
+    align-items: center;
+  }
+
+  #iconCarouselTrack-abx:hover{
+    animation-play-state: paused;
+  }
+  
+  .iconCarouselItem-abx img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: brightness(100%);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  
+  .iconCarouselItem-abx img:hover {
+    opacity: 1;
+  }
+  
+  @keyframes scrollIcons-abx {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+.content-buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    gap: 10px !important;
+}
+
+.btn-restaurants {
+    width: auto;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: #eae8e8;
+    color: rgb(55, 55, 55);
+    cursor: pointer;
+}
+
+.btn-restaurants:hover {
+    background-color: #FF7828;
+    color: white;
+}
+
+.content-restaurants {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-restaurants-double {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-restaurant {
+   width: 50%;
+}
+
+.card-restaurant div {
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-restaurant img {
+    border-radius: 10px;
+    width: 500px;
+    height: auto;
+}
+
+.title-restaurants {
+
+}
+
+.content-restaurants-simple {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-restaurants-simple div {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 50px !important;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content-restaurants-simple div img {
+    width: 350px;
+    height: 300px;
+    border-radius: 50px !important;
+}
+
+@media screen and (max-width: 1020px) {
+    .content-restaurants-double {
+        flex-direction: column;
+    }
+    .card-restaurant {
+        width: 100%;
+    }
+    .content-restaurants-simple {
+        flex-direction: column;
+    }
+    .content-restaurants-simple div {
+        width: 100%;
+    } 
+}
+
+@media screen and (max-width: 500px) {
+    .card-restaurant img {
+        width: 300px;
+    }
+    .content-restaurants-simple div img {
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 330px) {
+    .card-restaurant img {
+        width: 200px;
+    }
+    
+}
+
+.valid-mdp {
+    color: green !important;
+  }
+  
+.invalid-mdp {
+color: red !important;
+}
+
+.btn-plus-restaurant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #FF7828;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-plus-restaurant:hover {
+    background-color: #94461a;
+}
